@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import {
   Bot,
+  Code,
   FileJson,
   Keyboard,
   LayoutList,
@@ -131,6 +132,33 @@ export const tools: ToolDefinition[] = [
     category: "Cheatsheets",
     icon: Keyboard,
     component: lazy(() => import("./vim-cheatsheet/VimCheatsheet")),
+  },
+  {
+    id: "zed-cheatsheet",
+    name: "Zed",
+    description:
+      "Zed editor shortcuts, with a focus on find, replace, and project search, plus navigation, multi-cursor, and editing.",
+    keywords: [
+      "zed",
+      "editor",
+      "ide",
+      "cheatsheet",
+      "cheat sheet",
+      "find",
+      "replace",
+      "search",
+      "project search",
+      "find in files",
+      "regex",
+      "multi cursor",
+      "command palette",
+      "go to file",
+      "shortcuts",
+      "keybindings",
+    ],
+    category: "Cheatsheets",
+    icon: Code,
+    component: lazy(() => import("./zed-cheatsheet/ZedCheatsheet")),
   },
   {
     id: "screen-cheatsheet",
